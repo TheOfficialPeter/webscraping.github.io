@@ -5,6 +5,7 @@
 
 1. Installing Python + libraries.
       1. Installing VsCode and configuring Python
+      2. Installing libraries
 2. Introduction to Requests.
 3. Example of Requests.
 4. Introduction to Beautiful Soup.
@@ -49,7 +50,11 @@ After installed press `ctrl+shift+p` (You can also go the the <b>View</b> tab an
 ![group js - Chat - Visual Studio Code 12_6_2022 10_36_50 PM](https://user-images.githubusercontent.com/57006688/206017893-3617bf8b-402a-4e85-b831-8f0d47e52d68.png)
 
 Then select the recommended one. Great! Now we have Python installed and connected with Vscode.<br/>
-We can now create python files and run them within Vscode
+We can now create python files and run them within Vscode.
+
+### Installing libraries
+
+By now you should know what command prompt is. We will be using it to install the required libraries. At the start of each section I will show how you can install the required libraries. Some might not require installation (Requests library is pre-installed), but I will state how when it does.
 
 ## Introduction to Requests
 
