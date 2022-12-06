@@ -23,6 +23,7 @@
       1. What is NodeJS?
       2. Why use NodeJS?
       3. Installing NodeJS.
+      4. Installing NodeJS modules
 10. Introduction to Puppeteer.
 11. Example of Puppeteer.
 
