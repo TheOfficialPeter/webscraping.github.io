@@ -1,7 +1,6 @@
 # A Dive Into webscraping
 ###### Author: TheOfficialPeter. <br/> Please note: This article assumes that you know the basic python syntax.
 
-## Sections
 ### Basic
 1. Installing Python + libraries.
 2. Introduction to Requests Libray.
