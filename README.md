@@ -11,14 +11,21 @@
 
 ### Advanced
 
-6. Introduction to Selenium.
-7. Completed example of Selenium.
+6. What is lazy-loading and how to overcome it.
+7. Introduction to Selenium.
+8. Completed example of Selenium.
 
 ### Web Scraping with NodeJS
 
-8. Getting started with NodeJS.
-9. Introduction to Puppeteer.
-10. Completed example of Puppeteer.
+9. Getting started with NodeJS.
+10. Introduction to Puppeteer.
+11. Completed example of Puppeteer.
+
+### Web Automation
+
+12. What is Web Automation.
+13. Introduction to website automation with Selenium
+14. Completed example of website automation with Selenium
 
 ## Installing Python + Libraries
 
