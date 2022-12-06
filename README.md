@@ -20,6 +20,9 @@
 ### Web Scraping with NodeJS
 
 9. Getting started with NodeJS.
+      1. What is NodeJS?
+      2. Why use NodeJS?
+      3. Installing NodeJS.
 10. Introduction to Puppeteer.
 11. Example of Puppeteer.
 
