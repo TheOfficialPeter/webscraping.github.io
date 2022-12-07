@@ -75,17 +75,19 @@ We use this library only for basic web scraping that doesn't involve the need fo
 
 We can start of by creating a new python file in Vscode and call it something similar to <b>main.py</b>. Now let's open the file and firstly import the modules/libraries we need for web scraping in this case we are using Requests. The first line of code should look like this: 
 
-Image here
+![image](https://user-images.githubusercontent.com/57006688/206243471-9bb0d503-b731-41d1-b696-2f8123cffe0b.png)
 
 We are importing the Requests module (it's basically a python script containing pre-defined functions that you can use almost anywhere).
 
 Now we have a list of functions we can use to do some scraping. We would like to grab a web page's code first so that we can use that information for statistical purposes, marketing research etc.
 
-Image here
+![image](https://user-images.githubusercontent.com/57006688/206243759-59cfd1cb-7e01-4619-8ec0-f9e241381bdb.png)
 
-In the above image we are using the `HTTP GET` requests using the `requests.get(url)` function to make grab the html source of the url which we are storing in a variable called `r`. If we were to print the variable `r` this is what it will return:
+In the above image we are using the `HTTP GET` requests using the `requests.get(url)` function to make grab the html source of the url which we are storing in a variable called `r`. If we were to print the variable `r` this is what it will return when we run the file:
 
-Image here
+![image](https://user-images.githubusercontent.com/57006688/206243942-f54a0b87-2478-4bb0-8678-abb717fea3da.png)
 
 This is the HTML code of the website url we provided to the `GET` request, stored as a string.
-Now that we have the data captured from the website we can use it
+Now that we have the data captured from the website we can use it also you can run python files by pressing the `run icon` top right.
+
+![image](https://user-images.githubusercontent.com/57006688/206244165-6dd386fc-c046-45f1-a5af-6ed5d7c40e86.png)
