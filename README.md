@@ -27,11 +27,11 @@
 10. Introduction to Puppeteer.
 11. Example of Puppeteer.
 
-### Web Automation
+### Browser Automation
 
-12. What is Web Automation.
-13. Introduction to website automation with Selenium
-14. Example of website automation with Selenium
+12. What is Browser Automation.
+13. Introduction to browser automation with Selenium
+14. Example of browser automation with Selenium
 
 ## Installing Python + Libraries
 
