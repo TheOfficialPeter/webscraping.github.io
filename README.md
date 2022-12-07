@@ -62,5 +62,30 @@ By now you should know what command prompt is. We will be using it to install th
 
 ## Introduction to Requests
 
-The Requests library is a pre-installed python library used to make HTTP requests to web pages / ip addresses to be able to retrieve or send data.
+The Requests library is a pre-installed python library. If you don't have the module installed or just want to make sure do the following:<br/>
+
+1. Open command prompt.
+2. Type in `pip install requests`
+3. Look at what the output says. It will state whether the requirements are already met (already installed) or not. Either way it should be installed.
+
+Requests is used to make HTTP requests to web pages / ip addresses to be able to retrieve or send data.
 We use this library only for basic web scraping that doesn't involve the need for extreme methods of scraping. You would also need to know how to work with strings to use this library as your main method of scraping since Requests grabs the web page's front-end code as a whole string. The string formatting has to be done manually. When we reach <b>4. Introduction to Beautiful Soup</b> you'll see how we work around this tedious problem. 
+
+## Example of Requests
+
+We can start of by creating a new python file in Vscode and call it something similar to <b>main.py</b>. Now let's open the file and firstly import the modules/libraries we need for web scraping in this case we are using Requests. The first line of code should look like this: 
+
+Image here
+
+We are importing the Requests module (it's basically a python script containing pre-defined functions that you can use almost anywhere).
+
+Now we have a list of functions we can use to do some scraping. We would like to grab a web page's code first so that we can use that information for statistical purposes, marketing research etc.
+
+Image here
+
+In the above image we are using the `HTTP GET` requests using the `requests.get(url)` function to make grab the html source of the url which we are storing in a variable called `r`. If we were to print the variable `r` this is what it will return:
+
+Image here
+
+This is the HTML code of the website url we provided to the `GET` request, stored as a string.
+Now that we have the data captured from the website we can use it
