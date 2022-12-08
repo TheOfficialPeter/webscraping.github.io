@@ -37,8 +37,6 @@
 
 Installing python is really simple. Just visit [the official python web page](https://www.python.org/downloads/) and download the latest version and open the installer. During installation please make sure you have checked the box that **adds python to the PATH**. If you don't see the checkbox, add it manually. [Here](https://medium.com/@omoshalewa/why-you-should-add-python-to-path-and-how-58693c17c443) is an example. If this link is broken just google 'How to add python to PATH'.<br/>
 
-After installing python we need to install the libraries needed to make web scraping possible. Luckily the first library is pre-installed. So we can start right away. We will cover the installation of libraries at **4. Introduction to Beautiful Soup**.
-
 ### Installing VsCode and configuring Python
 
 The next step for you it to grab your text editor so we can start coding some cool stuff. Personally I prefer using [Vim](https://www.vim.org) or [Vscode](https://code.visualstudio.com). I would recommend you to use VsCode since it is more beginner-friendly. After installing [Vscode](https://code.visualstudio.com) from the website, open it up and you should be greeted with a fancy looking UI. Now we are going to connect Python with Vscode otherwise we our text editor (Vscode) is useless. I will be explaining how to install the extension, but if you find it difficult to follow you can also visit the official tutorial [here](https://code.visualstudio.com/docs/languages/python). Upon being greeted with the main User Interface, navigate to the extensions tab. (Picture below of the extensions tab icon)
@@ -58,11 +56,11 @@ We can now create python files and run them within Vscode.
 
 ### Installing libraries
 
-By now you should know what command prompt is. We will be using it to install the required libraries. At the start of each section I will show how you can install the required libraries. Some might not require installation (Requests library is pre-installed), but I will state how when it does.
+By now you should know what command prompt is. We will be using it to install the required libraries. At the start of each section I will show you how you can install the required libraries. Some might not require installation, but I will state how when it does.
 
 ## Introduction to Requests
 
-The Requests library is a pre-installed python library. If you don't have the module installed or just want to make sure do the following:<br/>
+The Requests library is a pre-installed (sometimes) python library. If you don't have the module installed or just want to make sure do the following:<br/>
 
 1. Open command prompt.
 2. Type in `pip install requests`
@@ -73,7 +71,7 @@ We use this library only for basic web scraping that doesn't involve the need fo
 
 ## Example of Requests
 
-We can start of by creating a new python file in Vscode and call it something similar to <b>main.py</b>. Now let's open the file and firstly import the modules/libraries we need for web scraping in this case we are using Requests. The first line of code should look like this: 
+We can start of by creating a new python file in Vscode and call it something similar to <b>main.py</b> or <b>test.py</b>. Now let's open the file and firstly import the modules/libraries we need for web scraping in this case we are using Requests. The first line of code should look like this: 
 
 ![image](https://user-images.githubusercontent.com/57006688/206243471-9bb0d503-b731-41d1-b696-2f8123cffe0b.png)
 
@@ -88,13 +86,13 @@ In the above image we are using the `HTTP GET` requests using the `requests.get(
 ![image](https://user-images.githubusercontent.com/57006688/206243942-f54a0b87-2478-4bb0-8678-abb717fea3da.png)
 
 This is the HTML code of the website url we provided to the `GET` request, stored as a string.
-Now that we have the data captured from the website we can use it also you can run python files by pressing the `run icon` top right.
+Now that we have the data captured from the website we can use it. Also forgot to mention you can run python files by pressing the `run icon` top right.
 
 ![image](https://user-images.githubusercontent.com/57006688/206244165-6dd386fc-c046-45f1-a5af-6ed5d7c40e86.png)
 
 Let's go back a few steps. Web scraping requires you to know what you want to achieve. This is my thought process when it comes to scraping.
 - I have a deep look into the website and it's mechanics.
-- I start to look for <b>unique, important values</b> as well as repeating values. Both can be used in different use cases.
+- I start to look for <b>unique, important values</b> as well as <b>repeating values</b>. Both can be used in different use cases.
 <br/>
 Below is my analysis of the website we are currently testing.
 
