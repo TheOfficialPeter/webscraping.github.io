@@ -1,5 +1,5 @@
 # A Dive Into Webscraping
-###### Author: P e t e r. <br/> Please note: This article assumes that you know the basic python syntax.
+###### Author: P e t e r. <br/> Please note: This article assumes that you know the basic python syntax. Also I will be placing all the code in this repo.
 
 ### Basic
 
