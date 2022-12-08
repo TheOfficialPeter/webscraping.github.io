@@ -98,4 +98,9 @@ Below is my analysis of the website we are currently testing.
 
 ![image](https://user-images.githubusercontent.com/57006688/206375541-986bbc31-7338-4b6a-8e25-cd391ac35219.png)
 
-The items circled in `red` are repeating values. The items circled in `blue` are important values. In this scenario we can use the important values to monitor the results of the books and use the repeating values to store the information about it. To be honest this scenario doesn't really have a great "important value", you will be seeing better ones as we progress to different websites to scrape.
+The items circled in `red` are repeating values. The items circled in `blue` are important values. In this scenario we can use the important values to monitor the results of the books and use the repeating values to store the information about it. To be honest this scenario doesn't really have a great "important value", but we will use it anyways. You will be seeing better ones as we progress to different websites to scrape.
+
+Now we will scrape the `important value` instead of the `repeating values` only becuase it's a tedious process to do complex scraping with manual string methods as I mentioned previously.
+
+
+
