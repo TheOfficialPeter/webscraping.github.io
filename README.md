@@ -91,3 +91,13 @@ This is the HTML code of the website url we provided to the `GET` request, store
 Now that we have the data captured from the website we can use it also you can run python files by pressing the `run icon` top right.
 
 ![image](https://user-images.githubusercontent.com/57006688/206244165-6dd386fc-c046-45f1-a5af-6ed5d7c40e86.png)
+
+Let's go back a few steps. Web scraping requires you to know what you want to achieve. This is my thought process when it comes to scraping.
+- I have a deep look into the website and it's mechanics.
+- I start to look for <b>unique, important values</b> as well as repeating values. Both can be used in different use cases.
+<br/>
+Below is my analysis of the website we are currently testing.
+
+![image](https://user-images.githubusercontent.com/57006688/206375541-986bbc31-7338-4b6a-8e25-cd391ac35219.png)
+
+The items circled in `red` are repeating values. The items circled in `blue` are important values. In this scenario we can use the important values to monitor the results of the books and use the repeating values to store the information about it. To be honest this scenario doesn't really have a great "important value", you will be seeing better ones as we progress to different websites to scrape.
