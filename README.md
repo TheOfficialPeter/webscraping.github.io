@@ -10,28 +10,29 @@
 3. Example of Requests.
 4. Introduction to Beautiful Soup.
 5. Example of Beautiful Soup.
+6. Displaying data on a graph using pyplot
 
 ### Advanced
 
-6. What is lazy-loading and how to overcome it.
-7. Introduction to Selenium.
-8. Example of Selenium.
+7. What is lazy-loading and how to overcome it.
+8. Introduction to Selenium.
+9. Example of Selenium.
 
 ### Web Scraping with NodeJS
 
-9. Getting started with NodeJS.
+10. Getting started with NodeJS.
       1. What is NodeJS?
       2. Why use NodeJS?
       3. Installing NodeJS.
       4. Installing NodeJS modules
-10. Introduction to Puppeteer.
-11. Example of Puppeteer.
+11. Introduction to Puppeteer.
+12. Example of Puppeteer.
 
 ### Browser Automation
 
-12. What is Browser Automation.
-13. Introduction to browser automation with Selenium
-14. Example of browser automation with Selenium
+13. What is Browser Automation.
+14. Introduction to browser automation with Selenium
+15. Example of browser automation with Selenium
 
 ## Installing Python + Libraries
 
@@ -100,7 +101,13 @@ Below is my analysis of the website we are currently testing.
 
 The items circled in `red` are repeating values. The items circled in `blue` are important values. In this scenario we can use the important values to monitor the results of the books and use the repeating values to store the information about it. To be honest this scenario doesn't really have a great "important value", but we will use it anyways. You will be seeing better ones as we progress to different websites to scrape.
 
-Now we will scrape the `important value` instead of the `repeating values` only becuase it's a tedious process to do complex scraping with manual string methods as I mentioned previously.
+Now we will scrape the `important value` instead of the `repeating values` only becuase it's a tedious process to do a lot of complex scraping with manual string methods as I mentioned previously, but I'll do it once.
+
+First start of by grabbing the element's tag from the string like this:
 
 
+And that's it. This is webscraping in a nutshell. You can go to <b>6. Displaying data on a graph using pylot</b> if you want to see how we use this data for research.
 
+## Introduction to Beautiful Soup
+
+This library is an absolute beast for web scraping. 
