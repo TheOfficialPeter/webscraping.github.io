@@ -103,8 +103,41 @@ The items circled in `red` are repeating values. The items circled in `blue` are
 
 Now we will scrape the `important value` instead of the `repeating values` only becuase it's a tedious process to do a lot of complex scraping with manual string methods as I mentioned previously, but I'll do it once.
 
-First start of by grabbing the element's tag from the string like this:
+First start of by grabbing the element's tags beginning index like this:
 
+![image](https://user-images.githubusercontent.com/57006688/206643961-d7dace65-57b6-495c-9255-9a91f7ba2af6.png)
+
+What we do is get the number of the character where the `<strong>` element is first occured, because when you look in your browser's inspector tool (right-click, inspect element)
+
+![image](https://user-images.githubusercontent.com/57006688/206644544-876f25ed-85f0-47e1-8ee1-5b770722aaa8.png)
+
+You'll see that the `important value` has a tag around it called "strong" and you would also notice that it is the first occurance of the tag "strong", but if there were previous occurences of that tag then this wouldn't have worked becuase this code grabs the first occurence. Hopefully I explained it in a way you could understand.
+
+Now we will grab the "strong" closing tag which looks like `</strong>`
+
+![image](https://user-images.githubusercontent.com/57006688/206644713-140e28f1-1285-4b96-bc04-d3b859d16057.png)
+
+Now we have 2 numbers. We know where the element starts and end in the whole string. Now we `cut` the text out like below.
+
+![image](https://user-images.githubusercontent.com/57006688/206644893-db60f43c-7d29-4909-b692-b711c659b5a9.png)
+
+And now if we print the part that we cut out of the main string we get this:
+
+![image](https://user-images.githubusercontent.com/57006688/206644967-8c6586a7-cdee-411c-84c9-950fbf86df1d.png)
+
+The reason I use `+len("<strong>")` is becuase it grabs the number of the starting point of the element's text so when you do it without that part like below:
+
+`stringCut = sourceCode[begin:end]` <br/>
+`print(stringCut)`
+
+
+Then it will output this:
+
+`<strong>1000`
+
+But when you add the length of the word `<strong>` you get:
+
+`1000`
 
 And that's it. This is webscraping in a nutshell. You can go to <b>6. Displaying data on a graph using pylot</b> if you want to see how we use this data for research.
 
