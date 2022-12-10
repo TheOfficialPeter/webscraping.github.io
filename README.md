@@ -144,3 +144,34 @@ And that's it. This is webscraping in a nutshell. You can go to <b>6. Displaying
 ## Introduction to Beautiful Soup
 
 "Beautiful Soup is a Python library for pulling data out of HTML and XML files. It works with your favorite parser to provide idiomatic ways of navigating, searching, and modifying the parse tree. It commonly saves programmers hours or days of work."
+
+To install this library you'll have to open command prompt and type in the following `pip install beautifulsoup4` and then press `Enter`. Now we will add the library to our Python script.
+
+![image](https://user-images.githubusercontent.com/57006688/206842016-22120611-a9e3-41d2-8686-37c06c8de6f9.png)
+
+We say `as bs` just to add our own abbreviation to the class `BeautifulSoup` so now we can just use `bs` everywhere.
+
+Let's continue where we last left off. Since beatiful soup is used to dissasemble a website's source code, it doesn't grab the source code this means that we will still be using the requests library to grab the source code and feed it to beautiful soup. So you should have this as your code currently:
+
+![image](https://user-images.githubusercontent.com/57006688/206841902-34204c0c-0306-458c-a618-61c3bbcf3749.png)
+
+And now we have the variable `soureCode` which stores the code and we will read it in beautiful soup like this:
+
+![image](https://user-images.githubusercontent.com/57006688/206842137-a705c1b0-0835-4666-b933-e9b02f6ad166.png)
+
+Now it is being read by Beautiful Soup, but we still have a problem. In this scenario I don't believe this is an issue, but sometimes the code might not be correctly formatted. So you could have html code that looks like: 
+
+`<html><body></body></html>`
+
+But is should look like
+
+`<html>`<br/>
+`<body>`<br/>
+`</body>`<br/>
+`</html>`<br/>
+
+Thus we use the function from the `bs` class called `prettify()` just to make sure the code is correctly formatted.
+
+![image](https://user-images.githubusercontent.com/57006688/206842260-8d31663c-707e-4971-bea6-4a46aeb7cf10.png)
+
+You notice we have 2 variables with the same names. This process is called "overriding" where we change the variables value to something else. In this case we change the source code so that it is fomatted correctly.
