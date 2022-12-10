@@ -1,5 +1,5 @@
 # A Dive Into Webscraping
-###### Author: P e t e r. <br/> Please note: This article assumes that you know the basic python syntax. Also I will be placing all the code in this repo.
+###### Author: P e t e r. <br/> Please note: This article assumes that you know the basic python syntax. Also the code is available [here](https://github.com/TheOfficialPeter/webscraping.github.io/blob/main/test.py).
 
 ### Basic
 
