@@ -169,19 +169,12 @@ And now we have the variable `soureCode` which stores the code and we will read 
 
 ![image](https://user-images.githubusercontent.com/57006688/206842137-a705c1b0-0835-4666-b933-e9b02f6ad166.png)
 
-Now it is being read by Beautiful Soup, but we still have a problem. In this scenario I don't believe this is an issue, but sometimes the code might not be correctly formatted. So you could have html code that looks like: 
+Alright. Now let's grab the "repeating values" which are the book names. We will do this by using Beautiful Soup's `find_all()` function which can fetch any tag names etc. Since each name elements has a tag `h3` it will be really easy grabbing them all.
 
-`<html><body></body></html>`
+![image](https://user-images.githubusercontent.com/57006688/206853776-0293bc5d-1747-44c6-a2e6-f4136c8c77be.png)
 
-But is should look like
+In the image above we use the `bs.find_all()` function with the parameter set as `h3` to find all the h3 tagged elements on the web page. If you don't know how I got `h3` right-click on webpage and open the developer tools (right-click -> Inspect element) and then you will see that the name has an h3 tag. Now we have a loop that will go through all the `elements` that we found. Now we just want the text of those elements, not the element itself. so if we want to print the name of each book we will do this
 
-`<html>`<br/>
-`<body>`<br/>
-`</body>`<br/>
-`</html>`<br/>
+![image](https://user-images.githubusercontent.com/57006688/206853892-b0ae17cf-7de0-41fc-b2ac-08b344be9eb4.png)
 
-Thus we use the function from the `bs` class called `prettify()` just to make sure the code is correctly formatted.
-
-![image](https://user-images.githubusercontent.com/57006688/206842260-8d31663c-707e-4971-bea6-4a46aeb7cf10.png)
-
-You notice we have 2 variables with the same names. This process is called "overriding" where we change the variables value to something else. In this case we change the source code so that it is fomatted correctly.
+you have to put `.text` becuase otherwise it will print the entire element. You can change it and see the difference. And that's the basics of scraping with Beautiful Soup. Now I think I'll do one more example on a different website just to help you understand different scenarios.
