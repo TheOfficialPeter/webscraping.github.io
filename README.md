@@ -72,7 +72,17 @@ We use this library only for basic web scraping that doesn't involve the need fo
 
 ## Example of Requests
 
-We can start of by creating a new python file in Vscode and call it something similar to <b>main.py</b> or <b>test.py</b>. Now let's open the file and firstly import the modules/libraries we need for web scraping in this case we are using Requests. The first line of code should look like this: 
+We can start of by creating a new python folder called "Python" and then create a file inside of it and then open it in Vscode and call it something similar to <b>main.py</b> or <b>test.py</b>. 
+
+![image](https://user-images.githubusercontent.com/57006688/206842513-27afffc6-5ef5-4bc9-9a02-ab255a2d4e8d.png)
+
+![test py - Python - Visual Studio Code 12_10_2022 11_08_15 AM](https://user-images.githubusercontent.com/57006688/206842598-d726bb0d-2c91-4ee8-bf37-a4bf206f5b1a.png)
+
+![image](https://user-images.githubusercontent.com/57006688/206842604-ee109fed-cc06-4baf-8612-05bbe102a19d.png)
+
+![image](https://user-images.githubusercontent.com/57006688/206842611-4794a625-d821-4513-90b1-76f85af50ca6.png)
+
+Now let's open the file and firstly import the modules/libraries we need for web scraping in this case we are using Requests. The first line of code should look like this: 
 
 ![image](https://user-images.githubusercontent.com/57006688/206243471-9bb0d503-b731-41d1-b696-2f8123cffe0b.png)
 
