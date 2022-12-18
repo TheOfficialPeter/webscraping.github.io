@@ -155,7 +155,11 @@ And that's it. This is webscraping in a nutshell. You can go to <b>6. Displaying
 
 "Beautiful Soup is a Python library for pulling data out of HTML and XML files. It works with your favorite parser to provide idiomatic ways of navigating, searching, and modifying the parse tree. It commonly saves programmers hours or days of work."
 
-To install this library you'll have to open command prompt and type in the following `pip install beautifulsoup4` and then press `Enter`. Now we will add the library to our Python script.
+To install this library you'll have to open command prompt and type in the following `pip install beautifulsoup4` and then press `Enter`. 
+
+## Example of Beautiful Soup
+
+Now we will add the library to our Python script.
 
 ![image](https://user-images.githubusercontent.com/57006688/206842016-22120611-a9e3-41d2-8686-37c06c8de6f9.png)
 
@@ -177,4 +181,11 @@ In the image above we use the `bs.find_all()` function with the parameter set as
 
 ![image](https://user-images.githubusercontent.com/57006688/206853892-b0ae17cf-7de0-41fc-b2ac-08b344be9eb4.png)
 
-you have to put `.text` becuase otherwise it will print the entire element. You can change it and see the difference. And that's the basics of scraping with Beautiful Soup. Now I think I'll do one more example on a different website just to help you understand different scenarios.
+you have to put `.text` becuase otherwise it will print the entire element. You can change it and see the difference. And that's the basics of scraping with Beautiful Soup.
+
+## Displaying data on a graph using pyplot
+
+Pyplot is a library which is used to visually display information. It can be used along with machine learning to make predictions for many different scenario's.
+We will install the library by opening Command Prompt and typing `pip install matplotlib`. Now in VsCode we will import the library
+
+![image](https://user-images.githubusercontent.com/57006688/208314224-2257e54c-4288-47d0-9455-ce9d9b35f3ea.png)
