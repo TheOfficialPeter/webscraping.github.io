@@ -148,7 +148,7 @@ But when you add the length of the word `<strong>` you get:
 
 `1000`
 
-And that's it. This is webscraping in a nutshell. You can go to <b>6. Displaying data on a graph using pylot</b> if you want to see how we use this data for research.
+And that's it. This is webscraping in a nutshell. 
 
 ## Introduction to Beautiful Soup
 
