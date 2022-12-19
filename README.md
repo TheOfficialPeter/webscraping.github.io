@@ -10,29 +10,28 @@
 3. Example of Requests.
 4. Introduction to Beautiful Soup.
 5. Example of Beautiful Soup.
-6. Displaying data on a graph using pyplot
 
 ### Advanced
 
-7. What is lazy-loading and how to overcome it.
-8. Introduction to Selenium.
-9. Example of Selenium.
+6. What is lazy-loading and how to overcome it.
+7. Introduction to Selenium.
+8. Example of Selenium.
 
 ### Web Scraping with NodeJS
 
-10. Getting started with NodeJS.
+9. Getting started with NodeJS.
       1. What is NodeJS?
       2. Why use NodeJS?
       3. Installing NodeJS.
       4. Installing NodeJS modules
-11. Introduction to Puppeteer.
-12. Example of Puppeteer.
+10. Introduction to Puppeteer.
+11. Example of Puppeteer.
 
 ### Browser Automation
 
-13. What is Browser Automation.
-14. Introduction to browser automation with Selenium
-15. Example of browser automation with Selenium
+12. What is Browser Automation.
+13. Introduction to browser automation with Selenium
+14. Example of browser automation with Selenium
 
 ## Installing Python + Libraries
 
@@ -183,9 +182,6 @@ In the image above we use the `bs.find_all()` function with the parameter set as
 
 you have to put `.text` becuase otherwise it will print the entire element. You can change it and see the difference. And that's the basics of scraping with Beautiful Soup.
 
-## Displaying data on a graph using pyplot
+## What is lazy-loading and how to overcome it
 
-Pyplot is a library which is used to visually display information. It can be used along with machine learning to make predictions for many different scenario's.
-We will install the library by opening Command Prompt and typing `pip install matplotlib`. Now in VsCode we will import the library
-
-![image](https://user-images.githubusercontent.com/57006688/208314224-2257e54c-4288-47d0-9455-ce9d9b35f3ea.png)
+You have 2 different types of websites. Static web pages and Dynamic web pages. Static web pages loads all the content that you see using html,css etc. This type of content doesn't require any loading in, because it is pre-loaded it that makes sense. Dynamic web pages has content that need to be loaded in and you'll see web pages like these everywhere youTube is an example of a dynamic web pages, because the videos needs to be loaded in, becuase our computers doesn't have the capacity or power to show every video that exists on the YouTube, it would break. That's why YouTube only loads in the videos that need to be loaded in and thus we call it a dynamic web page. These pages require different methods of scraping since the previous 2 libraries we used can only read `pre-loaded code` from a website and since the videos aren't pre-loaded we can't really fetch their information. The workaroud for this is to either use browser extensions or plugins which can read the content after it is loaded in or by using a browser automating tool such as selenium or puppetteer which are the two ones we'll be using.
