@@ -189,3 +189,17 @@ You have 2 different types of websites. Static web pages and Dynamic web pages. 
 
 Let's start building our first selenium scraper. We can create a new python script for this application called `seleniumScrape.py` or someting similar. Now let's open the file in VsCode. Now as usual let's start importing all the required modules/libraries. Open up your command prompt or terminal or whatever console you use and type in `pip install selenium` and press Enter. Great now we can start building out first advanced scraper!
 
+For this module we will need a webdriver. There's a few you can choose from:
+- Chrome
+- Edge
+- Firefox
+- Safari
+
+For this article we will be using the Chrome web driver. You can download and install it [here](https://chromedriver.storage.googleapis.com/index.html?path=108.0.5359.71/)
+
+If you don't know how to install or where to put the .exe file. Go to your boot drive folder (normall called `C:/`) and place the `chromedriver.exe` inside there. Now we can import the modules in the new script we created
+
+![image](https://user-images.githubusercontent.com/57006688/208761770-6173e303-4062-454e-829c-1b0f3756c707.png)
+
+Now we can create a variable called driver which will fetch the installed driver.
+
