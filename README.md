@@ -1,5 +1,5 @@
 # A Dive Into Webscraping
-###### Author: P e t e r. <br/> Please note: This article assumes that you know the basic python syntax. Also the code is available [here](https://github.com/TheOfficialPeter/webscraping.github.io/blob/main/test.py).
+###### Author: P e t e r. <br/> Please note: This article assumes that you know the basic python syntax. Also the code is available [here](https://github.com/TheOfficialPeter/webscraping.github.io/).
 
 ### Basic
 
@@ -181,7 +181,7 @@ In the image above we use the `bs.find_all()` function with the parameter set as
 
 ![image](https://user-images.githubusercontent.com/57006688/206853892-b0ae17cf-7de0-41fc-b2ac-08b344be9eb4.png)
 
-you have to put `.text` becuase otherwise it will print the entire element. You can change it and see the difference. And that's the basics of scraping with Beautiful Soup. You can have a look at `9. Displaying information using PyPlot` if you want to see how we place the fetched information into visual representations and graphs.
+you have to put `.text` becuase otherwise it will print the entire element. You can change it and see the difference. And that's the basics of scraping with Beautiful Soup. You can have a look at `9. Displaying information using PyPlot` if you want to see how we place the fetched information into visual representations and graphs. Again I want to remind you that all the files and code is uploaded to this github repo which you can visit [here](https://github.com/TheOfficialPeter/webscraping.github.io/)
 
 ## What is lazy-loading and how to overcome it
 
