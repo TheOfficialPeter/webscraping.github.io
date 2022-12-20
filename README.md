@@ -16,22 +16,23 @@
 6. What is lazy-loading and how to overcome it.
 7. Introduction to Selenium.
 8. Example of Selenium.
+9. Displaying information using PyPlot
 
 ### Web Scraping with NodeJS
 
-9. Getting started with NodeJS.
+10. Getting started with NodeJS.
       1. What is NodeJS?
       2. Why use NodeJS?
       3. Installing NodeJS.
       4. Installing NodeJS modules
-10. Introduction to Puppeteer.
-11. Example of Puppeteer.
+11. Introduction to Puppeteer.
+12. Example of Puppeteer.
 
 ### Browser Automation
 
-12. What is Browser Automation.
-13. Introduction to browser automation with Selenium
-14. Example of browser automation with Selenium
+13. What is Browser Automation.
+14. Introduction to browser automation with Selenium
+15. Example of browser automation with Selenium
 
 ## Installing Python + Libraries
 
@@ -180,8 +181,11 @@ In the image above we use the `bs.find_all()` function with the parameter set as
 
 ![image](https://user-images.githubusercontent.com/57006688/206853892-b0ae17cf-7de0-41fc-b2ac-08b344be9eb4.png)
 
-you have to put `.text` becuase otherwise it will print the entire element. You can change it and see the difference. And that's the basics of scraping with Beautiful Soup.
+you have to put `.text` becuase otherwise it will print the entire element. You can change it and see the difference. And that's the basics of scraping with Beautiful Soup. You can have a look at `9. Displaying information using PyPlot` if you want to see how we place the fetched information into visual representations and graphs.
 
 ## What is lazy-loading and how to overcome it
 
-You have 2 different types of websites. Static web pages and Dynamic web pages. Static web pages loads all the content that you see using html,css etc. This type of content doesn't require any loading in, because it is pre-loaded it that makes sense. Dynamic web pages has content that need to be loaded in and you'll see web pages like these everywhere youTube is an example of a dynamic web pages, because the videos needs to be loaded in, becuase our computers doesn't have the capacity or power to show every video that exists on the YouTube, it would break. That's why YouTube only loads in the videos that need to be loaded in and thus we call it a dynamic web page. These pages require different methods of scraping since the previous 2 libraries we used can only read `pre-loaded code` from a website and since the videos aren't pre-loaded we can't really fetch their information. The workaroud for this is to either use browser extensions or plugins which can read the content after it is loaded in or by using a browser automating tool such as selenium or puppetteer which are the two ones we'll be using.
+You have 2 different types of websites. Static web pages and Dynamic web pages. Static web pages loads all the content that you see using html,css etc. This type of content doesn't require any loading in, because it is pre-loaded if that makes sense. Dynamic web pages has content that need to be loaded in and you'll see web pages like these everywhere YouTube is an example of a dynamic web page, because the videos needs to be loaded in, becuase our computers doesn't have the capacity or power to show every video that exists on the YouTube, it would break. That's why YouTube only loads in the videos that need to be loaded in and thus we call it a dynamic web page. These pages require different methods of scraping since the previous 2 libraries we used can only read `pre-loaded code` from a website and since the videos aren't pre-loaded we can't really fetch their information. The workaroud for this is to either use browser extensions and plugins which can read the content after it is loaded in or by using a browser automating tool such as selenium or puppetteer which are the two ones we'll be using.
+
+Let's start building our first selenium scraper. We can create a new python script for this application called `seleniumScrape.py` or someting similar. Now let's open the file in VsCode. Now as usual let's start importing all the required modules/libraries. Open up your command prompt or terminal or whatever console you use and type in `pip install selenium` and press Enter. Great now we can start building out first advanced scraper!
+
