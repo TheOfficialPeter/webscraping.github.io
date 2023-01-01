@@ -201,5 +201,12 @@ If you don't know how to install or where to put the .exe file. Go to your boot 
 
 ![image](https://user-images.githubusercontent.com/57006688/208761770-6173e303-4062-454e-829c-1b0f3756c707.png)
 
-Now we can create a variable called driver which will fetch the installed driver.
+Now we can create a variable called driver which will fetch the installed driver. `Please note that this method of grabbing the webdriver is deprecated. I will update this article when it stops working.`
 
+![image](https://user-images.githubusercontent.com/57006688/210176704-440b15e3-18fd-4b4e-b63b-64d39e4ceb15.png)
+
+Now we can ask selenium to use the webdriver and to open a website and store the result of the website in a variable.
+
+![image](https://user-images.githubusercontent.com/57006688/210176723-a29d7483-1962-484d-ba6a-916d63ef76a0.png)
+
+Now that selenium has read the site it can find elements that take time to load in (lazy-loaded elements).
