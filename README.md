@@ -187,6 +187,12 @@ you have to put `.text` becuase otherwise it will print the entire element. You 
 
 You have 2 different types of websites. Static web pages and Dynamic web pages. Static web pages loads all the content that you see using html,css etc. This type of content doesn't require any loading in, because it is pre-loaded if that makes sense. Dynamic web pages has content that need to be loaded in and you'll see web pages like these everywhere YouTube is an example of a dynamic web page, because the videos needs to be loaded in, becuase our computers doesn't have the capacity or power to show every video that exists on the YouTube, it would break. That's why YouTube only loads in the videos that need to be loaded in and thus we call it a dynamic web page. These pages require different methods of scraping since the previous 2 libraries we used can only read `pre-loaded code` from a website and since the videos aren't pre-loaded we can't really fetch their information. The workaroud for this is to either use browser extensions and plugins which can read the content after it is loaded in or by using a browser automating tool such as selenium or puppetteer which are the two ones we'll be using.
 
+## Introduction to Selenium
+
+Selenium is an open source umbrella project for a range of tools and libraries aimed at supporting browser automation. It provides a playback tool for authoring functional tests across most modern web browsers, without the need to learn a test scripting language. We can use this tool to overcome lazy-loading.
+
+## Example of Selenium
+
 Let's start building our first selenium scraper. We can create a new python script for this application called `seleniumScrape.py` or someting similar. Now let's open the file in VsCode. Now as usual let's start importing all the required modules/libraries. Open up your command prompt or terminal or whatever console you use and type in `pip install selenium` and press Enter. Great now we can start building out first advanced scraper!
 
 For this module we will need a webdriver. There's a few you can choose from:
