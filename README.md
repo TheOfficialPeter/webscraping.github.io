@@ -205,8 +205,42 @@ Now we can create a variable called driver which will fetch the installed driver
 
 ![image](https://user-images.githubusercontent.com/57006688/210176704-440b15e3-18fd-4b4e-b63b-64d39e4ceb15.png)
 
-Now we can ask selenium to use the webdriver and to open a website and store the result of the website in a variable.
+Now we can ask selenium to use the webdriver and to open a website and store the result of the website in a variable. For this example we open the web version of youtube as our scraping website. Please note that this is for educational purposes only.
 
 ![image](https://user-images.githubusercontent.com/57006688/210176723-a29d7483-1962-484d-ba6a-916d63ef76a0.png)
 
-Now that selenium has read the site it can find elements that take time to load in (lazy-loaded elements).
+Now that selenium has read the site it can find elements that take time to load in (lazy-loaded elements). When looking at youtube we know that videos are one of the main elements that takes time to load in. This included the title of the video, the thumbnail, the video uploader etc. Now we are going to scrape video titles and save them in a .txt file which we can open anytime to look into. Let's start by using our web browsers `inspect element` tool (right-click then choose the inspect element option) and then look for what the element for the video titles look like. 
+
+![image](https://user-images.githubusercontent.com/57006688/210404778-414ac4fd-d8fe-4bbc-8e85-669630beb47c.png)
+
+Looking at the image above if we use the `inspect element` tool on the video title we can see the element has a unique id (so far we think it is unique). So let's scrape all the elements that have the same ID as this one, because then we will be able to scrape all the video title of our search. We will break this part down into a few explained steps which will be explained by chatGPT since I do not have a deep enough understanding to be able to explain it simply.
+
+### Let's first understand how a URL works and how we can modify a url to give different outputs to our browser window.
+
+A URL (Uniform Resource Locator) is a string of text that specifies the location of a resource on the internet. It is like an address that specifies where something is located. URLs are used to access web pages, but they can also be used to access other types of resources, such as images and videos.
+
+There are several parts that make up a URL:
+
+Protocol: This specifies the type of resource that the URL is pointing to. The most common protocol is http, which stands for HyperText Transfer Protocol. Other protocols include https, ftp, file, and mailto.
+
+Domain: This is the main part of the URL and specifies the name of the website that the resource is located on. For example, the domain for Google is google.com.
+
+Path: This specifies the location of the resource within the website. It is like a file path on a computer, and it can include subdirectories and individual files.
+
+Query string: This is a set of key-value pairs that are appended to the end of the URL and are used to pass additional information to the server. They are usually separated from the rest of the URL by a ? character, and each key-value pair is separated by a & character.
+
+Fragment: This is an optional part of the URL that specifies a specific location within a resource. It is separated from the rest of the URL by a # character.
+
+Here is an example of a complete URL:
+
+```https://www.example.com/path/to/resource?key1=value1&key2=value2#fragment```
+
+In this example:
+
+The protocol is `https`.<br/>
+The domain is `www.example.com`.<br/>
+The path is `/path/to/resource`.<br/>
+The query string is `key1=value1&key2=value2`.<br/>
+The fragment is `fragment`.<br/>
+
+Using the information above we will modify the url in our code to search for a specific word or sentence, in this case `cats`.
