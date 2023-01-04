@@ -215,11 +215,7 @@ Now we can ask selenium to use the webdriver and to open a website and store the
 
 ![image](https://user-images.githubusercontent.com/57006688/210176723-a29d7483-1962-484d-ba6a-916d63ef76a0.png)
 
-Now that selenium has read the site it can find elements that take time to load in (lazy-loaded elements). When looking at youtube we know that videos are one of the main elements that takes time to load in. This included the title of the video, the thumbnail, the video uploader etc. Now we are going to scrape video titles and save them in a .txt file which we can open anytime to look into. Let's start by using our web browsers `inspect element` tool (right-click then choose the inspect element option) and then look for what the element for the video titles look like. 
-
-![image](https://user-images.githubusercontent.com/57006688/210404778-414ac4fd-d8fe-4bbc-8e85-669630beb47c.png)
-
-Looking at the image above if we use the `inspect element` tool on the video title we can see the element has a unique id (so far we think it is unique). So let's scrape all the elements that have the same ID as this one, because then we will be able to scrape all the video title of our search. We will break this part down into a few explained steps which will be explained by chatGPT since I do not have a deep enough understanding to be able to explain it simply.
+We have a problem. Since this is the base url and will only give us recommended video results and we want searched results we will have to change the url, but first let's go over what a url is and how it works. This answer was given by ChatGPT btw. I do not have a deep enough understanding to give a simple answer.
 
 ### Let's first understand how a URL works and how we can modify a url to give different outputs to our browser window.
 
@@ -249,4 +245,28 @@ The path is `/path/to/resource`.<br/>
 The query string is `key1=value1&key2=value2`.<br/>
 The fragment is `fragment`.<br/>
 
-Using the information above we will modify the url in our code to search for a specific word or sentence, in this case `cats`.
+Using the information above we will modify the url in our code to search for a specific word or sentence, in this case `cats`. Here's the fixed line of code:
+
+![image](https://user-images.githubusercontent.com/57006688/210654689-5edeefc7-1b2d-41ac-bf71-7a33e3200a01.png)
+
+Now it will grab the source code of the website which contains the video resutls for the term "cats".
+Now that selenium has read the site it can find elements that take time to load in (lazy-loaded elements). When looking at youtube we know that videos are one of the main elements that takes time to load in. This included the title of the video, the thumbnail, the video uploader etc. Now we are going to scrape video titles and save them in a .txt file which we can open anytime to look into. Let's start by using our web browsers `inspect element` tool (right-click then choose the inspect element option) and then look for what the element for the video titles look like. 
+
+![image](https://user-images.githubusercontent.com/57006688/210404778-414ac4fd-d8fe-4bbc-8e85-669630beb47c.png)
+
+Looking at the image above if we use the `inspect element` tool on the video title we can see the element has a unique id (so far we think it is unique). So let's scrape all the elements that have the same ID as this one, because then we will be able to scrape all of those video titles from our search.
+
+Now we will ask Selenium to read all the video titles from the web page by doing the following.
+
+First we use the find_elements method from the driver and here we can specify what we want to search for specifically. Don't forget to add the `By` class into the code as well since we will be using it.
+
+![image](https://user-images.githubusercontent.com/57006688/210656276-4db71045-afb7-42fc-bec7-5c88167047a1.png)
+
+Then use the find_elements method.
+
+![image](https://user-images.githubusercontent.com/57006688/210656512-035aba3b-5dd5-4b25-9942-ae98c501237d.png)
+
+This will return a Python list containing all the elements it found. Let's iterate through the list and save all the items in a .txt file for future usage.
+
+--- Coming soon ---
+
