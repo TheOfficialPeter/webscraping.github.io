@@ -268,5 +268,13 @@ Then use the find_elements method.
 
 This will return a Python list containing all the elements it found. Let's iterate through the list and save all the items in a .txt file for future usage.
 
+![image](https://user-images.githubusercontent.com/57006688/210760793-82d613c7-3a57-4458-b83f-fb50e6b25542.png)
+
+Now if we run this it will give us something similar to this:
+
+![image](https://user-images.githubusercontent.com/57006688/210760868-92964829-f4b3-4e4a-b018-6a307f9f86e6.png)
+
+This is the list of all video titles on that page.
+
 --- Coming soon ---
 
